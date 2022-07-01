@@ -1,0 +1,22 @@
+def PerfectSquare(x) :
+    i = 1
+    while(i**2 <= x):
+        if ((x%i == 0) and (x/i == i)):
+            return True
+        i += 1
+    return False
+num = int(input())
+if (PerfectSquare(num)):
+    print(num, 'is a perfect square')
+else:
+    print(num, 'is not a perfect square')
+    
+    
+    output:
+    625
+    625 is a perfect square
+
+
+* Process exited - Return Code: 0 *
+Press Enter to exit terminal
+Online Python Compiler
